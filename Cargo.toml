@@ -1,8 +1,21 @@
-[package]
-name = "baby-jolt"
-version = "0.1.0"
-edition = "2021"
+[workspace]
+resolver = "2"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+members = [
+    "cli",
+    "entries",
+    "circuits",
+]
 
-[dependencies]
+[workspace.dependencies]
+primitive-types = "0.12"
+lazy_static = "1.4"
+
+jolt-core = { git = "https://github.com/a16z/jolt" }
+jolt-common = { git = "https://github.com/a16z/jolt", package = "common" }
+jolt-sdk = { git = "https://github.com/a16z/jolt" }
+
+[patch.crates-io]
+ark-ff = { git = "https://github.com/a16z/arkworks-algebra", branch = "optimize/field-from-u64" }
+ark-ec = { git = "https://github.com/a16z/arkworks-algebra", branch = "optimize/field-from-u64" }
+ark-serialize = { git = "https://github.com/a16z/arkworks-algebra", branch = "optimize/field-from-u64" }

@@ -1,0 +1,22 @@
+[package]
+name = "baby-jolt-cli"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "cli"
+path = "src/main.rs"
+
+[dependencies]
+log = "0.4.14"
+hex = "0.4.3"
+clap = { version = "^4.3.10", features = ["derive", "env"] }
+anyhow = "1.0"
+chrono = "0.4.23"
+serde_json = "1.0.115"
+
+entries = { path = "../entries" }
+circuits = { path = "../circuits" }
+
+[features]
+super = []

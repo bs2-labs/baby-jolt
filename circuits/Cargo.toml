@@ -1,0 +1,21 @@
+[package]
+name = "circuits"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ark-bn254 = "0.4"
+ark-serialize = "0.4"
+hex = "0.4"
+serde = "1.0"
+serde_json = "1.0"
+thiserror = "1.0"
+
+# jolt-core = { git = "https://github.com/a16z/jolt" }
+# jolt-common = { git = "https://github.com/a16z/jolt", package = "common" }
+# jolt-sdk = { git = "https://github.com/a16z/jolt" }
+
+# [patch.crates-io]
+# ark-ff = { git = "https://github.com/a16z/arkworks-algebra", branch = "optimize/field-from-u64" }
+# ark-ec = { git = "https://github.com/a16z/arkworks-algebra", branch = "optimize/field-from-u64" }
+# ark-serialize = { git = "https://github.com/a16z/arkworks-algebra", branch = "optimize/field-from-u64" }
