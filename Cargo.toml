@@ -1,19 +1,15 @@
 [workspace]
 resolver = "2"
 
-members = [
-    "cli",
-    "entries",
-    "circuits",
-]
+members = ["cli", "entries", "circuits"]
 
 [workspace.dependencies]
 primitive-types = "0.12"
 lazy_static = "1.4"
 
-jolt-core = { git = "https://github.com/a16z/jolt" }
-jolt-common = { git = "https://github.com/a16z/jolt", package = "common" }
-jolt-sdk = { git = "https://github.com/a16z/jolt" }
+jolt-core = { git = "https://github.com/bs2-labs/jolt" }
+jolt-common = { git = "https://github.com/bs2-labs/jolt", package = "common" }
+jolt-sdk = { git = "https://github.com/bs2-labs/jolt" }
 
 [patch.crates-io]
 ark-ff = { git = "https://github.com/a16z/arkworks-algebra", branch = "optimize/field-from-u64" }

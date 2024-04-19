@@ -126,7 +126,7 @@ dependencies = [
  "ark-std",
  "derivative",
  "hashbrown",
- "itertools",
+ "itertools 0.10.5",
  "num-traits",
  "rayon",
  "zeroize",
@@ -143,7 +143,7 @@ dependencies = [
  "ark-std",
  "derivative",
  "digest 0.10.7",
- "itertools",
+ "itertools 0.10.5",
  "num-bigint",
  "num-traits",
  "paste",
@@ -255,7 +255,7 @@ dependencies = [
  "bitflags 2.5.0",
  "cexpr",
  "clang-sys",
- "itertools",
+ "itertools 0.12.1",
  "lazy_static",
  "lazycell",
  "log",
@@ -482,7 +482,7 @@ dependencies = [
 [[package]]
 name = "common"
 version = "0.2.0"
-source = "git+https://github.com/a16z/jolt#3edeba53a754bebb8a7884d126964c7cc05dc63b"
+source = "git+https://github.com/bs2-labs/jolt#2259e007e6f4bf6cf30990813be5db47ef2e6670"
 dependencies = [
  "ark-serialize",
  "serde",
@@ -526,7 +526,7 @@ dependencies = [
  "clap",
  "criterion-plot",
  "is-terminal",
- "itertools",
+ "itertools 0.10.5",
  "num-traits",
  "once_cell",
  "oorandom",
@@ -547,7 +547,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "6b50826342786a51a89e2da3a28f1c32b06e387201bc2d19791f622c673706b1"
 dependencies = [
  "cast",
- "itertools",
+ "itertools 0.10.5",
 ]
 
 [[package]]
@@ -888,6 +888,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "itertools"
+version = "0.12.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "ba291022dbbd398a455acf126c1e341954079855bc60dfdda641363bd6922569"
+dependencies = [
+ "either",
+]
+
+[[package]]
 name = "itoa"
 version = "1.0.11"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -896,7 +905,7 @@ checksum = "49f1f14873335454500d59611f1cf4a4b0f786f9ac11f4312a78e4cf2566695b"
 [[package]]
 name = "jolt-core"
 version = "0.1.0"
-source = "git+https://github.com/a16z/jolt#3edeba53a754bebb8a7884d126964c7cc05dc63b"
+source = "git+https://github.com/bs2-labs/jolt#2259e007e6f4bf6cf30990813be5db47ef2e6670"
 dependencies = [
  "ark-bn254",
  "ark-ec",
@@ -911,7 +920,7 @@ dependencies = [
  "enum_dispatch",
  "fixedbitset",
  "iai-callgrind",
- "itertools",
+ "itertools 0.10.5",
  "lazy_static",
  "merlin",
  "num-integer",
@@ -1643,7 +1652,7 @@ dependencies = [
 [[package]]
 name = "tracer"
 version = "0.2.0"
-source = "git+https://github.com/a16z/jolt#3edeba53a754bebb8a7884d126964c7cc05dc63b"
+source = "git+https://github.com/bs2-labs/jolt#2259e007e6f4bf6cf30990813be5db47ef2e6670"
 dependencies = [
  "common",
  "fnv",
